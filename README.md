@@ -1,3 +1,6 @@
+![Uploading image.png…]()
+
+
 | No. |  Command                                              |     Description 
 | 1   | git config --global user.name "[firstname lastname]" ` Set a name that is identifiable for credit when reviewing version history.`
 | 2   | git config --global user.email "[valid-email]"       ` Set an email address that will be associated with each history marker.`
