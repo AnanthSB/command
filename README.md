@@ -1,7 +1,3 @@
-![image](https://github.com/user-attachments/assets/29e83f83-331e-4036-af04-3fcada7af173)
-
-
-
 | No. | Command | Description |
 |-----|---------|-------------|
 | 1   | `git config --global user.name "[firstname lastname]"` | Set a name that is identifiable for credit when reviewing version history. |
