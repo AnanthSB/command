@@ -2,39 +2,40 @@
 
 
 
-No. &nbsp; Command &nbsp; Description
-1 &nbsp; git&nbsp;config&nbsp;--global&nbsp;user.name&nbsp;"[firstname&nbsp;lastname]" &nbsp; Set&nbsp;a&nbsp;name&nbsp;that&nbsp;is&nbsp;identifiable&nbsp;for&nbsp;credit&nbsp;when&nbsp;reviewing&nbsp;version&nbsp;history.
-2 &nbsp; git&nbsp;config&nbsp;--global&nbsp;user.email&nbsp;"[valid-email]" &nbsp; Set&nbsp;an&nbsp;email&nbsp;address&nbsp;that&nbsp;will&nbsp;be&nbsp;associated&nbsp;with&nbsp;each&nbsp;history&nbsp;marker.
-3 &nbsp; git&nbsp;config&nbsp;--global&nbsp;color.ui&nbsp;auto &nbsp; Set&nbsp;automatic&nbsp;command&nbsp;line&nbsp;coloring&nbsp;for&nbsp;Git&nbsp;for&nbsp;easy&nbsp;reviewing.
-4 &nbsp; git&nbsp;init &nbsp; Initialize&nbsp;an&nbsp;existing&nbsp;directory&nbsp;as&nbsp;a&nbsp;Git&nbsp;repository.
-5 &nbsp; git&nbsp;clone&nbsp;[url] &nbsp; Retrieve&nbsp;an&nbsp;entire&nbsp;repository&nbsp;from&nbsp;a&nbsp;hosted&nbsp;location&nbsp;via&nbsp;URL.
-6 &nbsp; git&nbsp;status &nbsp; Show&nbsp;modified&nbsp;files&nbsp;in&nbsp;the&nbsp;working&nbsp;directory,&nbsp;staged&nbsp;for&nbsp;your&nbsp;next&nbsp;commit.
-7 &nbsp; git&nbsp;add&nbsp;[file] &nbsp; Add&nbsp;a&nbsp;file&nbsp;as&nbsp;it&nbsp;looks&nbsp;now&nbsp;to&nbsp;your&nbsp;next&nbsp;commit&nbsp;(stage).
-8 &nbsp; git&nbsp;reset&nbsp;[file] &nbsp; Unstage&nbsp;a&nbsp;file&nbsp;while&nbsp;retaining&nbsp;the&nbsp;changes&nbsp;in&nbsp;the&nbsp;working&nbsp;directory.
-9 &nbsp; git&nbsp;diff &nbsp; Diff&nbsp;of&nbsp;what&nbsp;is&nbsp;changed&nbsp;but&nbsp;not&nbsp;staged.
-10 &nbsp; git&nbsp;diff&nbsp;--staged &nbsp; Diff&nbsp;of&nbsp;what&nbsp;is&nbsp;staged&nbsp;but&nbsp;not&nbsp;yet&nbsp;committed.
-11 &nbsp; git&nbsp;commit&nbsp;-m&nbsp;"[descriptive&nbsp;message]" &nbsp; Commit&nbsp;your&nbsp;staged&nbsp;content&nbsp;as&nbsp;a&nbsp;new&nbsp;commit&nbsp;snapshot.
-12 &nbsp; git&nbsp;branch &nbsp; List&nbsp;your&nbsp;branches.&nbsp;A&nbsp;*&nbsp;will&nbsp;appear&nbsp;next&nbsp;to&nbsp;the&nbsp;currently&nbsp;active&nbsp;branch.
-13 &nbsp; git&nbsp;branch&nbsp;[branch-name] &nbsp; Create&nbsp;a&nbsp;new&nbsp;branch&nbsp;at&nbsp;the&nbsp;current&nbsp;commit.
-14 &nbsp; git&nbsp;checkout &nbsp; Switch&nbsp;to&nbsp;another&nbsp;branch&nbsp;and&nbsp;check&nbsp;it&nbsp;out&nbsp;into&nbsp;your&nbsp;working&nbsp;directory.
-15 &nbsp; git&nbsp;merge&nbsp;[branch] &nbsp; Merge&nbsp;the&nbsp;specified&nbsp;branch’s&nbsp;history&nbsp;into&nbsp;the&nbsp;current&nbsp;one.
-16 &nbsp; git&nbsp;log &nbsp; Show&nbsp;all&nbsp;commits&nbsp;in&nbsp;the&nbsp;current&nbsp;branch’s&nbsp;history.
-17 &nbsp; git&nbsp;log&nbsp;branchB..branchA &nbsp; Show&nbsp;the&nbsp;commits&nbsp;on&nbsp;branchA&nbsp;that&nbsp;are&nbsp;not&nbsp;on&nbsp;branchB.
-18 &nbsp; git&nbsp;log&nbsp;--follow&nbsp;[file] &nbsp; Show&nbsp;the&nbsp;commits&nbsp;that&nbsp;changed&nbsp;file,&nbsp;even&nbsp;across&nbsp;renames.
-19 &nbsp; git&nbsp;diff&nbsp;branchB...branchA &nbsp; Show&nbsp;the&nbsp;diff&nbsp;of&nbsp;what&nbsp;is&nbsp;in&nbsp;branchA&nbsp;that&nbsp;is&nbsp;not&nbsp;in&nbsp;branchB.
-20 &nbsp; git&nbsp;show&nbsp;[SHA] &nbsp; Show&nbsp;any&nbsp;object&nbsp;in&nbsp;Git&nbsp;in&nbsp;human-readable&nbsp;format.
-21 &nbsp; git&nbsp;rm&nbsp;[file] &nbsp; Delete&nbsp;the&nbsp;file&nbsp;from&nbsp;the&nbsp;project&nbsp;and&nbsp;stage&nbsp;the&nbsp;removal&nbsp;for&nbsp;commit.
-22 &nbsp; git&nbsp;mv&nbsp;[existing-path]&nbsp;[new-path] &nbsp; Change&nbsp;an&nbsp;existing&nbsp;file&nbsp;path&nbsp;and&nbsp;stage&nbsp;the&nbsp;move.
-23 &nbsp; git&nbsp;log&nbsp;--stat&nbsp;-M &nbsp; Show&nbsp;all&nbsp;commit&nbsp;logs&nbsp;with&nbsp;an&nbsp;indication&nbsp;of&nbsp;any&nbsp;paths&nbsp;that&nbsp;moved.
-24 &nbsp; git&nbsp;stash &nbsp; Save&nbsp;modified&nbsp;and&nbsp;staged&nbsp;changes.
-25 &nbsp; git&nbsp;stash&nbsp;list &nbsp; List&nbsp;stack-order&nbsp;of&nbsp;stashed&nbsp;file&nbsp;changes.
-26 &nbsp; git&nbsp;stash&nbsp;pop &nbsp; Write&nbsp;working&nbsp;from&nbsp;top&nbsp;of&nbsp;stash&nbsp;stack.
-27 &nbsp; git&nbsp;stash&nbsp;drop &nbsp; Discard&nbsp;the&nbsp;changes&nbsp;from&nbsp;top&nbsp;of&nbsp;stash&nbsp;stack.
-28 &nbsp; git&nbsp;remote&nbsp;add&nbsp;[alias]&nbsp;[url] &nbsp; Add&nbsp;a&nbsp;git&nbsp;URL&nbsp;as&nbsp;an&nbsp;alias.
-29 &nbsp; git&nbsp;fetch&nbsp;[alias] &nbsp; Fetch&nbsp;down&nbsp;all&nbsp;the&nbsp;branches&nbsp;from&nbsp;that&nbsp;Git&nbsp;remote.
-30 &nbsp; git&nbsp;merge&nbsp;[alias]/[branch] &nbsp; Merge&nbsp;a&nbsp;remote&nbsp;branch&nbsp;into&nbsp;your&nbsp;current&nbsp;branch&nbsp;to&nbsp;bring&nbsp;it&nbsp;up&nbsp;to&nbsp;date.
-31 &nbsp; git&nbsp;push&nbsp;[alias]&nbsp;[branch] &nbsp; Transmit&nbsp;local&nbsp;branch&nbsp;commits&nbsp;to&nbsp;the&nbsp;remote&nbsp;repository&nbsp;branch.
-32 &nbsp; git&nbsp;pull &nbsp; Fetch&nbsp;and&nbsp;merge&nbsp;any&nbsp;commits&nbsp;from&nbsp;the&nbsp;tracking&nbsp;remote&nbsp;branch.
-33 &nbsp; git&nbsp;rebase&nbsp;[branch] &nbsp; Apply&nbsp;any&nbsp;commits&nbsp;of&nbsp;the&nbsp;current&nbsp;branch&nbsp;ahead&nbsp;of&nbsp;the&nbsp;specified&nbsp;one.
-34 &nbsp; git&nbsp;reset&nbsp;--hard&nbsp;[commit] &nbsp; Clear&nbsp;staging&nbsp;area,&nbsp;rewrite&nbsp;working&nbsp;tree&nbsp;from&nbsp;specific&nbsp;commit.
-35 &nbsp; git&nbsp;config&nbsp;--global&nbsp;core.excludesfile&nbsp;[file] &nbsp; System-wide&nbsp;ignore&nbsp;pattern&nbsp;for&nbsp;all&nbsp;local&nbsp;repositories.
+| No.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; Command | Description |
+|-----|---------|-------------|
+| 1   | `git config --global user.name "[firstname lastname]"` | Set a name that is identifiable for credit when reviewing version history. |
+| 2   | `git config --global user.email "[valid-email]"` | Set an email address that will be associated with each history marker. |
+| 3   | `git config --global color.ui auto` | Set automatic command line coloring for Git for easy reviewing. |
+| 4   | `git init` | Initialize an existing directory as a Git repository. |
+| 5   | `git clone [url]` | Retrieve an entire repository from a hosted location via URL. |
+| 6   | `git status` | Show modified files in the working directory, staged for your next commit. |
+| 7   | `git add [file]` | Add a file as it looks now to your next commit (stage). |
+| 8   | `git reset [file]` | Unstage a file while retaining the changes in the working directory. |
+| 9   | `git diff` | Diff of what is changed but not staged. |
+| 10  | `git diff --staged` | Diff of what is staged but not yet committed. |
+| 11  | `git commit -m "[descriptive message]"` | Commit your staged content as a new commit snapshot. |
+| 12  | `git branch` | List your branches. A * will appear next to the currently active branch. |
+| 13  | `git branch [branch-name]` | Create a new branch at the current commit. |
+| 14  | `git checkout` | Switch to another branch and check it out into your working directory. |
+| 15  | `git merge [branch]` | Merge the specified branch’s history into the current one. |
+| 16  | `git log` | Show all commits in the current branch’s history. |
+| 17  | `git log branchB..branchA` | Show the commits on branchA that are not on branchB. |
+| 18  | `git log --follow [file]` | Show the commits that changed file, even across renames. |
+| 19  | `git diff branchB...branchA` | Show the diff of what is in branchA that is not in branchB. |
+| 20  | `git show [SHA]` | Show any object in Git in human-readable format. |
+| 21  | `git rm [file]` | Delete the file from the project and stage the removal for commit. |
+| 22  | `git mv [existing-path] [new-path]` | Change an existing file path and stage the move. |
+| 23  | `git log --stat -M` | Show all commit logs with an indication of any paths that moved. |
+| 24  | `git stash` | Save modified and staged changes. |
+| 25  | `git stash list` | List stack-order of stashed file changes. |
+| 26  | `git stash pop` | Write working from top of stash stack. |
+| 27  | `git stash drop` | Discard the changes from top of stash stack. |
+| 28  | `git remote add [alias] [url]` | Add a git URL as an alias. |
+| 29  | `git fetch [alias]` | Fetch down all the branches from that Git remote. |
+| 30  | `git merge [alias]/[branch]` | Merge a remote branch into your current branch to bring it up to date. |
+| 31  | `git push [alias] [branch]` | Transmit local branch commits to the remote repository branch. |
+| 32  | `git pull` | Fetch and merge any commits from the tracking remote branch. |
+| 33  | `git rebase [branch]` | Apply any commits of the current branch ahead of the specified one. |
+| 34  | `git reset --hard [commit]` | Clear staging area, rewrite working tree from specified commit. |
+| 35  | `git config --global core.excludesfile [file]` | System-wide ignore pattern for all local repositories. |
